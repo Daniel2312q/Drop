@@ -1,0 +1,6 @@
+name: Drop
+description: Drop z kamienia
+author: Black_Rider
+version: 1
+main: Black_Rider/Drop
+api: 1.12.0
