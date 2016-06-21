@@ -1,0 +1,12 @@
+<?php
+
+namespace Black_Rider;
+
+use pocketmine\plugin\PluginBase;
+use pocketmine\event\Listener;
+
+class Main extends PluginBase implements Listener{
+
+  public function onBreak(BlockBreakEvent $event){
+    $player = $event->getPlayer();
+    $block = $block->getId();
