@@ -9,4 +9,7 @@ class Main extends PluginBase implements Listener{
 
   public function onBreak(BlockBreakEvent $event){
     $player = $event->getPlayer();
-    $block = $block->getId();
+    }
+  if($e->getBlock()->getId() == 1 && mt_rand(0, 60)){
+    $player->getLevel()->getItem(264, 0, 1);
+    $player->sendPopup(">>> Diament <<<");
