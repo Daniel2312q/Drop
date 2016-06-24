@@ -1,6 +1,14 @@
 name: Drop
-description: Drop z kamienia
+name: Drop
 author: Black_Rider
 version: 1
-main: Black_Rider/Drop
-api: 1.12.0
+main: Black_Rider\Drop
+api: 1.13.1
+
+commands:
+ drop:
+  permission: command.drop
+  
+permissions: 
+ command.drop:
+  default: true
