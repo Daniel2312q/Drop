@@ -5,6 +5,7 @@ namespace Black_Rider;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 use pocketmine\utils\TextFormat;
+use pocketmine\utils\Config;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\event\block\BlockBreakEvent;
@@ -21,7 +22,7 @@ class Drop extends PluginBase implements Listener{
 			$sender->sendMessage(TextFormat::DARK_GREEN . "• " . TextFormat::GREEN . "> " . TextFormat::GRAY . "Diament: 1,25%");
 			$sender->sendMessage(TextFormat::DARK_GREEN . "• " . TextFormat::GREEN . "> " . TextFormat::GRAY . "Złoto: 1,25%");
 			$sender->sendMessage(TextFormat::DARK_GREEN . "• " . TextFormat::GREEN . "> " . TextFormat::GRAY . "Czerewony proch: 1,5%");
-			$sender->sendMessage(TextFormat::DARK_GREEN . "• " . TextFormat::GREEN . "> " . TextFormat::GRAY . "Szmarad: 1,5%");
+			$sender->sendMessage(TextFormat::DARK_GREEN . "• " . TextFormat::GREEN . "> " . TextFormat::GRAY . "Szmaragd: 1,5%");
 			$sender->sendMessage(TextFormat::DARK_GREEN . "• " . TextFormat::GREEN . "> " . TextFormat::GRAY . "Lazuryt: 1,5%");
 			$sender->sendMessage(TextFormat::DARK_GREEN . "• " . TextFormat::GREEN . "> " . TextFormat::GRAY . "Żelazo: 2,5%");
 			$sender->sendMessage(TextFormat::DARK_GREEN . "• " . TextFormat::GREEN . "> " . TextFormat::GRAY . "Węgiel: 2,5%");
