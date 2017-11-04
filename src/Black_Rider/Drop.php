@@ -11,6 +11,7 @@ use pocketmine\command\CommandSender;
 use pocketmine\event\block\BlockBreakEvent;
 use pocketmine\item\Item;
 use pocketmine\block\Block;
+use pocketmine\level\particle\LavaParticle;
 
 class Drop extends PluginBase implements Listener{
 	
@@ -32,33 +33,41 @@ class Drop extends PluginBase implements Listener{
 			$player = $event->getPlayer();
 			$block = $event->getBlock();
 			
-		if($block->getId() == 1 &&  mt_rand(0, 80) == "1"){
-			$player->getLevel()->dropItem($block, new item(264, 0, 1));
+		if($block->getId() == 1 &&  mt_rand(0, 60) == "1"){
+			$player->getLevel()->dropItem($block, new item(264, 0, mt_rand(0, 3)));
 			$player->sendPopup(TextFormat::GREEN . "•> " . TextFormat::GRAY . "DIAMENT" . TextFormat::GREEN . " <•");
+			$player->getLevel()->addParticle(new LavaParticle($b, 2));
 			}
-		if($block->getId() == 1 &&  mt_rand(0, 80) == "1"){
-			$player->getLevel()->dropItem($block, new item(266, 0, 1));
+		if($block->getId() == 1 &&  mt_rand(0, 55) == "1"){
+			$player->getLevel()->dropItem($block, new item(266, 0, mt_rand(0, 3)));
 			$player->sendPopup(TextFormat::GREEN . "•> " . TextFormat::GRAY . "ZŁOTO" . TextFormat::GREEN . " <•");
+			$player->getLevel()->addParticle(new LavaParticle($b, 2));
 			}
-		if($block->getId() == 1 &&  mt_rand(0, 60) == "1"){
-			$player->getLevel()->dropItem($block, new item(388, 0, 1));
+		if($block->getId() == 1 &&  mt_rand(0, 50) == "1"){
+			$player->getLevel()->dropItem($block, new item(388, 0, mt_rand(0, 3)));
 			$player->sendPopup(TextFormat::GREEN . "•> " . TextFormat::GRAY . "SZMARAGD" . TextFormat::GREEN . " <•");
+			$player->getLevel()->addParticle(new LavaParticle($b, 2));
 			}
-		if($block->getId() == 1 &&  mt_rand(0, 60) == "1"){
-			$player->getLevel()->dropItem($block, new item(331, 0, 1));
+		if($block->getId() == 1 &&  mt_rand(0, 45) == "1"){
+			$player->getLevel()->dropItem($block, new item(331, 0, mt_rand(0, 3)));
 			$player->sendPopup(TextFormat::GREEN . "•> " . TextFormat::GRAY . "CZERWONY PROCH" . TextFormat::GREEN . " <•");
+			$player->getLevel()->addParticle(new LavaParticle($b, 2));
 			}
-		if($block->getId() == 1 &&  mt_rand(0, 60) == "1"){
-			$player->getLevel()->dropItem($block, new item(351, 4, 1));
+		if($block->getId() == 1 &&  mt_rand(0, 40) == "1"){
+			$player->getLevel()->dropItem($block, new item(351, 4, mt_rand(0, 3)));
 			$player->sendPopup(TextFormat::GREEN . "•> " . TextFormat::GRAY . "LAZURYT" . TextFormat::GREEN . " <•");
+			$player->getLevel()->addParticle(new LavaParticle($b, 2));
 			}
-		if($block->getId() == 1 &&  mt_rand(0, 40) == "1"){
-			$player->getLevel()->dropItem($block, new item(265, 0, 1));
+		if($block->getId() == 1 &&  mt_rand(0, 35) == "1"){
+			$player->getLevel()->dropItem($block, new item(265, 0, mt_rand(0, 3)));
 			$player->sendPopup(TextFormat::GREEN . "•> " . TextFormat::GRAY . "ŻELAZO" . TextFormat::GREEN . " <•");
+			$player->getLevel()->addParticle(new LavaParticle($b, 2));
 			}
-		if($block->getId() == 1 &&  mt_rand(0, 40) == "1"){
-			$player->getLevel()->dropItem($block, new item(263, 0, 1));
+		if($block->getId() == 1 &&  mt_rand(0, 30) == "1")
+			
+			$player->getLevel()->dropItem($block, new item(263, 0, mt_rand(0, 3)));
 			$player->sendPopup(TextFormat::GREEN . "•> " . TextFormat::GRAY . "WĘGIEL" . TextFormat::GREEN . " <•");
+			$player->getLevel()->addParticle(new LavaParticle($b, 2));
 		}
 	}
 }
